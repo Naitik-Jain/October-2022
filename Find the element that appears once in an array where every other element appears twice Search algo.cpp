@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
+int findSingle(int A[], int ar_size)
 {
 	for (int i = 0; i < ar_size; i++) {
 		int count = 0;
+
 		for (int j = 0; j < ar_size; j++) {
 			if (A[i] == A[j]) {
 				count++;
@@ -15,6 +17,7 @@ using namespace std;
 	}
 	return -1;
 }
+
 int main()
 {
 	int ar[] = { 2, 3, 5, 4, 5, 3, 4 };
