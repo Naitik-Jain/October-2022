@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+int findSingle(int A[], int ar_size)
 {
 	for (int i = 0; i < ar_size; i++) {
 		int count = 0;
